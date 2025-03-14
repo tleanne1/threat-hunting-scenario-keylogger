@@ -36,6 +36,9 @@ DeviceFileEvents
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath
 ```
 
+<img width="979" alt="keylogger image1" src="https://github.com/user-attachments/assets/d1a40155-cf27-4136-aff8-154ab346e944" />
+
+
 ### 2. Searched the `DeviceProcessEvents` Table
 
 Searched the `DeviceProcessEvents` Table for PowerShell Execution I searched for PowerShell process executions involving `keylogger.ps1`. The search revealed that `powershell.exe` executed the script multiple times, confirming its execution.
@@ -51,6 +54,9 @@ DeviceProcessEvents
 | order by Timestamp desc
 ```
 
+<img width="1310" alt="keylogger image2" src="https://github.com/user-attachments/assets/a334e866-eff8-4f2e-aa4c-a80af11f209e" />
+
+
 ### 3. Searched for file modification
 
 Investigated File Modifications in Public Directories I searched for file activity, including file creations and modifications, in the `C:\Users\Public\ folder`. This revealed that the `keylogger.ps1` script created new files related to its execution.
@@ -65,6 +71,9 @@ DeviceFileEvents
 | order by Timestamp desc
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath
 ```
+
+<img width="1021" alt="keylogger image3" src="https://github.com/user-attachments/assets/8bdb6211-8add-49f9-90a7-25e4af5e0550" />
+
 
 ### 4. Searched for suspicious activity
 
@@ -83,6 +92,9 @@ DeviceFileEvents
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath
 ```
 
+<img width="1123" alt="keylogger image4" src="https://github.com/user-attachments/assets/2e1b7c24-03dc-4c10-a6b7-da12de859288" />
+
+
 ### 5. Searched for Clipboard data capture
 
 Investigated Clipboard Data Capture I searched for any device events related to clipboard or input capture. This could indicate that the keylogger was attempting to collect sensitive user input, such as passwords or other confidential data.
@@ -96,6 +108,8 @@ DeviceEvents
 | order by Timestamp desc
 | project Timestamp, DeviceName, ActionType
 ```
+
+<img width="531" alt="keylogger image5" src="https://github.com/user-attachments/assets/b0c3385f-0488-4751-8fd7-ffdcd0d8e907" />
 
 
 ### 6. Searched poswershell command executions
@@ -112,6 +126,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, ActionType, FileName, ProcessCommandLine
 | order by Timestamp desc
 ```
+
+<img width="1357" alt="keylogger image6" src="https://github.com/user-attachments/assets/17897945-bd5f-45d3-bbab-72579f491d13" />
 
 
 ## Chronological Event Timeline
