@@ -1,7 +1,7 @@
 ![Keylogger](https://github.com/user-attachments/assets/a3ef6721-4b38-4d7b-8cde-b8439e3157ec)
 
 # Threat Hunt Report: Keylogger.ps1 Execution and Activity Detection
-- [Scenario Creation](https://github.com/tleanne1/threat-hunting-scenario-tor/blob/main/threat-hunting-scenario-tor-event-creation.md)
+- [Scenario Creation](https://github.com/tleanne1/threat-hunting-scenario-keylogger/blob/main/threat-hunting-scenario-keylogge-creation.md)
 
 ## Platforms and Languages Leveraged:
 - Windows 10 Virtual Machine
